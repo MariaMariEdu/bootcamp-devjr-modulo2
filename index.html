@@ -29,9 +29,8 @@
 
     .flex-container{
         display: flex;
-        background-color: #006763;
         justify-content: space-around;
-        padding: 20px;
+        
 
     }
 
@@ -48,6 +47,57 @@
         font-weight: 600;
         margin-bottom: 15px;
     }
+    .col-1{
+        background-color: #006763;
+        width: 50%;
+        padding: 20px;
+        color: #FFFFFF;
+
+        
+    }
+
+    .col-2{
+        background-color: #009090;
+        width: 50%;
+        padding: 20px;
+        color: #FFFFFF;
+        
+    }
+
+    .subscription-title{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+   
+    .price{
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+
+    .month{
+        font-size: 15px;
+        font-style: italic;
+        margin-left: 15px;
+
+    }
+
+    .button{
+        margin-top: 20px;
+        width: 100%;
+        padding: 15px 32px;
+
+        color:#006763;
+        background-color: #E9E9E9;
+
+        font-size: 16px;
+
+        border-radius: 4px;
+        border: none;
+
+    }
+
 </style>
 
 </head>
@@ -68,10 +118,23 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                coluna1
+            <div class="col-1">
+                <div class="subscription-title">
+                    Assinatura mensal:
+                </div>
+                <div>
+                    <div>
+                       <span class="price"> R$99,99</span>
+                       <span>por mês</span>
+                    </div>
+                </div>
+                <div>
+                     Cancele a qualquer momento.
+                    </div>
+                <button class="button"> Assine Agora</button>
+                    
             </div>
-            <div>
+            <div class="col-2">
                 coluna2
             </div>
         </div>
